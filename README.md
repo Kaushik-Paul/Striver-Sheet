@@ -12,6 +12,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 |---|---------------------|--------------------------------------------------------------------------|-------------------------------------|
 | 1 | Set Matrix Zeroes   | [SetMatrixZero.java](src/com/example/arrays/SetMatrixZero.java)         | O(m·n) time, O(1) space             |
 | 2 | Pascal's Triangle I | [PascalTriangle1.java](src/com/example/arrays/PascalTriangle1.java)     | O(min(c, r−c)) time, O(1) space     |
+| 3 | Next Permutation    | [NextPermutation.java](src/com/example/arrays/NextPermutation.java)     | O(n) time, O(1) space               |
 
 ## Project Structure
 
@@ -20,7 +21,8 @@ src/
 └── com/example/
     └── arrays/
         ├── SetMatrixZero.java
-        └── PascalTriangle1.java
+        ├── PascalTriangle1.java
+        └── NextPermutation.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays`, `linkedlist`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
