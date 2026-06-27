@@ -8,11 +8,12 @@ Solutions are written in Java, each self-contained with its own test harness.
 
 ### Arrays
 
-| # | Problem             | Solution                                                                 | Complexity                          |
-|---|---------------------|--------------------------------------------------------------------------|-------------------------------------|
-| 1 | Set Matrix Zeroes   | [SetMatrixZero.java](src/com/example/arrays/SetMatrixZero.java)         | O(m·n) time, O(1) space             |
-| 2 | Pascal's Triangle I | [PascalTriangle1.java](src/com/example/arrays/PascalTriangle1.java)     | O(min(c, r−c)) time, O(1) space     |
-| 3 | Next Permutation    | [NextPermutation.java](src/com/example/arrays/NextPermutation.java)     | O(n) time, O(1) space               |
+| # | Problem                       | Solution                                                                         | Complexity                          |
+|---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
+| 1 | Set Matrix Zeroes             | [SetMatrixZero.java](src/com/example/arrays/SetMatrixZero.java)                 | O(m·n) time, O(1) space             |
+| 2 | Pascal's Triangle I           | [PascalTriangle1.java](src/com/example/arrays/PascalTriangle1.java)             | O(min(c, r−c)) time, O(1) space     |
+| 3 | Next Permutation              | [NextPermutation.java](src/com/example/arrays/NextPermutation.java)             | O(n) time, O(1) space               |
+| 4 | Sort an array of 0's, 1's, 2's | [SortArrays0s1s2s.java](src/com/example/arrays/SortArrays0s1s2s.java)           | O(n) time, O(1) space               |
 
 ## Project Structure
 
@@ -22,7 +23,8 @@ src/
     └── arrays/
         ├── SetMatrixZero.java
         ├── PascalTriangle1.java
-        └── NextPermutation.java
+        ├── NextPermutation.java
+        └── SortArrays0s1s2s.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays`, `linkedlist`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
