@@ -15,6 +15,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 3 | Next Permutation              | [NextPermutation.java](src/com/example/arrays/NextPermutation.java)             | O(n) time, O(1) space               |
 | 4 | Kadane's Algorithm            | [KadensAlgorithm.java](src/com/example/arrays/KadensAlgorithm.java)             | O(n) time, O(1) space               |
 | 5 | Sort an array of 0's, 1's, 2's | [SortArrays0s1s2s.java](src/com/example/arrays/SortArrays0s1s2s.java)           | O(n) time, O(1) space               |
+| 6 | Best Time to Buy and Sell Stock | [BuyAndSellStock.java](src/com/example/arrays/BuyAndSellStock.java)             | O(n) time, O(1) space               |
 
 ## Project Structure
 
@@ -26,7 +27,8 @@ src/
         ├── PascalTriangle1.java
         ├── NextPermutation.java
         ├── KadensAlgorithm.java
-        └── SortArrays0s1s2s.java
+        ├── SortArrays0s1s2s.java
+        └── BuyAndSellStock.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays`, `linkedlist`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
