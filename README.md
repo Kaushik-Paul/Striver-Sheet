@@ -19,9 +19,10 @@ Solutions are written in Java, each self-contained with its own test harness.
 
 ### LinkedList
 
-| # | Problem             | Solution                                                                       | Complexity             |
-|---|---------------------|--------------------------------------------------------------------------------|------------------------|
-| 1 | Reverse a Linked List | [ReverseLinkedList.java](src/com/example/linkedlist/ReverseLinkedList.java) | O(n) time, O(1) space  |
+| # | Problem                   | Solution                                                                           | Complexity             |
+|---|---------------------------|------------------------------------------------------------------------------------|------------------------|
+| 1 | Reverse a Linked List     | [ReverseLinkedList.java](src/com/example/linkedlist/ReverseLinkedList.java)         | O(n) time, O(1) space  |
+| 2 | Middle of a Linked List   | [MiddleOfLinkedList.java](src/com/example/linkedlist/MiddleOfLinkedList.java)       | O(n) time, O(1) space  |
 
 ## Project Structure
 
@@ -37,7 +38,8 @@ src/
     │   └── BuyAndSellStock.java
     └── linkedlist/
         ├── ListNode.java
-        └── ReverseLinkedList.java
+        ├── ReverseLinkedList.java
+        └── MiddleOfLinkedList.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays`, `linkedlist`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
