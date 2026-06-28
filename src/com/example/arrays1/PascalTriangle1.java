@@ -1,4 +1,4 @@
-package com.example.arrays;
+package com.example.arrays1;
 
 /**
  * Problem: Pascal's Triangle I

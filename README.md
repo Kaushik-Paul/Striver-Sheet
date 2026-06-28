@@ -6,16 +6,16 @@ Solutions are written in Java, each self-contained with its own test harness.
 
 ## Solved Problems
 
-### Arrays
+### Arrays-1
 
 | # | Problem                       | Solution                                                                         | Complexity                          |
 |---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
-| 1 | Set Matrix Zeroes             | [SetMatrixZero.java](src/com/example/arrays/SetMatrixZero.java)                 | O(m·n) time, O(1) space             |
-| 2 | Pascal's Triangle I           | [PascalTriangle1.java](src/com/example/arrays/PascalTriangle1.java)             | O(min(c, r−c)) time, O(1) space     |
-| 3 | Next Permutation              | [NextPermutation.java](src/com/example/arrays/NextPermutation.java)             | O(n) time, O(1) space               |
-| 4 | Kadane's Algorithm            | [KadensAlgorithm.java](src/com/example/arrays/KadensAlgorithm.java)             | O(n) time, O(1) space               |
-| 5 | Sort an array of 0's, 1's, 2's | [SortArrays0s1s2s.java](src/com/example/arrays/SortArrays0s1s2s.java)           | O(n) time, O(1) space               |
-| 6 | Best Time to Buy and Sell Stock | [BuyAndSellStock.java](src/com/example/arrays/BuyAndSellStock.java)             | O(n) time, O(1) space               |
+| 1 | Set Matrix Zeroes             | [SetMatrixZero.java](src/com/example/arrays1/SetMatrixZero.java)                 | O(m·n) time, O(1) space             |
+| 2 | Pascal's Triangle I           | [PascalTriangle1.java](src/com/example/arrays1/PascalTriangle1.java)             | O(min(c, r−c)) time, O(1) space     |
+| 3 | Next Permutation              | [NextPermutation.java](src/com/example/arrays1/NextPermutation.java)             | O(n) time, O(1) space               |
+| 4 | Kadane's Algorithm            | [KadensAlgorithm.java](src/com/example/arrays1/KadensAlgorithm.java)             | O(n) time, O(1) space               |
+| 5 | Sort an array of 0's, 1's, 2's | [SortArrays0s1s2s.java](src/com/example/arrays1/SortArrays0s1s2s.java)           | O(n) time, O(1) space               |
+| 6 | Best Time to Buy and Sell Stock | [BuyAndSellStock.java](src/com/example/arrays1/BuyAndSellStock.java)             | O(n) time, O(1) space               |
 
 ### LinkedList
 
@@ -60,7 +60,7 @@ Each file is self-contained and can be run independently.
 javac -d out src/com/example/arrays/SetMatrixZero.java
 
 # Run
-java -cp out com.example.arrays.SetMatrixZero
+java -cp out com.example.arrays1.SetMatrixZero
 ```
 
 Alternatively, open the project in IntelliJ IDEA and run the `main` method of any problem file directly.
