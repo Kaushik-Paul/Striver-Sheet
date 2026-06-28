@@ -13,7 +13,8 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 1 | Set Matrix Zeroes             | [SetMatrixZero.java](src/com/example/arrays/SetMatrixZero.java)                 | O(m·n) time, O(1) space             |
 | 2 | Pascal's Triangle I           | [PascalTriangle1.java](src/com/example/arrays/PascalTriangle1.java)             | O(min(c, r−c)) time, O(1) space     |
 | 3 | Next Permutation              | [NextPermutation.java](src/com/example/arrays/NextPermutation.java)             | O(n) time, O(1) space               |
-| 4 | Sort an array of 0's, 1's, 2's | [SortArrays0s1s2s.java](src/com/example/arrays/SortArrays0s1s2s.java)           | O(n) time, O(1) space               |
+| 4 | Kadane's Algorithm            | [KadensAlgorithm.java](src/com/example/arrays/KadensAlgorithm.java)             | O(n) time, O(1) space               |
+| 5 | Sort an array of 0's, 1's, 2's | [SortArrays0s1s2s.java](src/com/example/arrays/SortArrays0s1s2s.java)           | O(n) time, O(1) space               |
 
 ## Project Structure
 
@@ -24,6 +25,7 @@ src/
         ├── SetMatrixZero.java
         ├── PascalTriangle1.java
         ├── NextPermutation.java
+        ├── KadensAlgorithm.java
         └── SortArrays0s1s2s.java
 ```
 
