@@ -27,6 +27,12 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 4 | Remove Nth Node From End of List     | [RemoveNthListFromBack.java](src/com/example/linkedlist1/RemoveNthListFromBack.java)       | O(n) time, O(1) space       |
 | 5 | Delete Node in a Linked List         | [DeleteNodeInLinkedList.java](src/com/example/linkedlist1/DeleteNodeInLinkedList.java)     | O(1) time, O(1) space       |
 
+### Greedy Algorithm
+
+| # | Problem                       | Solution                                                                         | Complexity                          |
+|---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
+| 1 | N Meetings in One Room        | [NMeetingsInOneRoom.java](src/com/example/greedyalgorithm/NMeetingsInOneRoom.java) | O(N log N) time, O(N) space        |
+
 ## Project Structure
 
 ```
@@ -39,13 +45,15 @@ src/
     │   ├── KadensAlgorithm.java
     │   ├── SortArrays0s1s2s.java
     │   └── BuyAndSellStock.java
-    └── linkedlist1/
-        ├── ListNode.java
-        ├── ReverseLinkedList.java
-        ├── MiddleOfLinkedList.java
-        ├── MergeLinkedList.java
-        ├── RemoveNthListFromBack.java
-        └── DeleteNodeInLinkedList.java
+    ├── linkedlist1/
+    │   ├── ListNode.java
+    │   ├── ReverseLinkedList.java
+    │   ├── MiddleOfLinkedList.java
+    │   ├── MergeLinkedList.java
+    │   ├── RemoveNthListFromBack.java
+    │   └── DeleteNodeInLinkedList.java
+    └── greedyalgorithm/
+        └── NMeetingsInOneRoom.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
