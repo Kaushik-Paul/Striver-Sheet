@@ -25,6 +25,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 2 | Middle of a Linked List              | [MiddleOfLinkedList.java](src/com/example/linkedlist1/MiddleOfLinkedList.java)             | O(n) time, O(1) space       |
 | 3 | Merge Two Sorted Linked Lists        | [MergeLinkedList.java](src/com/example/linkedlist1/MergeLinkedList.java)                   | O(n + m) time, O(1) space   |
 | 4 | Remove Nth Node From End of List     | [RemoveNthListFromBack.java](src/com/example/linkedlist1/RemoveNthListFromBack.java)       | O(n) time, O(1) space       |
+| 5 | Delete Node in a Linked List         | [DeleteNodeInLinkedList.java](src/com/example/linkedlist1/DeleteNodeInLinkedList.java)     | O(1) time, O(1) space       |
 
 ## Project Structure
 
@@ -43,7 +44,8 @@ src/
         ├── ReverseLinkedList.java
         ├── MiddleOfLinkedList.java
         ├── MergeLinkedList.java
-        └── RemoveNthListFromBack.java
+        ├── RemoveNthListFromBack.java
+        └── DeleteNodeInLinkedList.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
