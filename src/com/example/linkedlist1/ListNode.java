@@ -1,4 +1,4 @@
-package com.example.linkedlist;
+package com.example.linkedlist1;
 
 /**
  * A singly linked list node used across the linked list problems in

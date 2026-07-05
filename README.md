@@ -21,24 +21,24 @@ Solutions are written in Java, each self-contained with its own test harness.
 
 | # | Problem                              | Solution                                                                                 | Complexity                  |
 |---|--------------------------------------|------------------------------------------------------------------------------------------|-----------------------------|
-| 1 | Reverse a Linked List                | [ReverseLinkedList.java](src/com/example/linkedlist/ReverseLinkedList.java)               | O(n) time, O(1) space       |
-| 2 | Middle of a Linked List              | [MiddleOfLinkedList.java](src/com/example/linkedlist/MiddleOfLinkedList.java)             | O(n) time, O(1) space       |
-| 3 | Merge Two Sorted Linked Lists        | [MergeLinkedList.java](src/com/example/linkedlist/MergeLinkedList.java)                   | O(n + m) time, O(1) space   |
-| 4 | Remove Nth Node From End of List     | [RemoveNthListFromBack.java](src/com/example/linkedlist/RemoveNthListFromBack.java)       | O(n) time, O(1) space       |
+| 1 | Reverse a Linked List                | [ReverseLinkedList.java](src/com/example/linkedlist1/ReverseLinkedList.java)               | O(n) time, O(1) space       |
+| 2 | Middle of a Linked List              | [MiddleOfLinkedList.java](src/com/example/linkedlist1/MiddleOfLinkedList.java)             | O(n) time, O(1) space       |
+| 3 | Merge Two Sorted Linked Lists        | [MergeLinkedList.java](src/com/example/linkedlist1/MergeLinkedList.java)                   | O(n + m) time, O(1) space   |
+| 4 | Remove Nth Node From End of List     | [RemoveNthListFromBack.java](src/com/example/linkedlist1/RemoveNthListFromBack.java)       | O(n) time, O(1) space       |
 
 ## Project Structure
 
 ```
 src/
 └── com/example/
-    ├── arrays/
+    ├── arrays1/
     │   ├── SetMatrixZero.java
     │   ├── PascalTriangle1.java
     │   ├── NextPermutation.java
     │   ├── KadensAlgorithm.java
     │   ├── SortArrays0s1s2s.java
     │   └── BuyAndSellStock.java
-    └── linkedlist/
+    └── linkedlist1/
         ├── ListNode.java
         ├── ReverseLinkedList.java
         ├── MiddleOfLinkedList.java
@@ -46,7 +46,7 @@ src/
         └── RemoveNthListFromBack.java
 ```
 
-Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays`, `linkedlist`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
+Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
 
 ## Conventions
 
@@ -63,7 +63,7 @@ Each file is self-contained and can be run independently.
 
 ```bash
 # Compile
-javac -d out src/com/example/arrays/SetMatrixZero.java
+javac -d out src/com/example/arrays1/SetMatrixZero.java
 
 # Run
 java -cp out com.example.arrays1.SetMatrixZero

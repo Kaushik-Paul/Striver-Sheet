@@ -1,4 +1,4 @@
-package com.example.linkedlist;
+package com.example.linkedlist1;
 
 import java.util.Arrays;
 

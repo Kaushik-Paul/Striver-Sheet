@@ -1,67 +1,63 @@
-package com.example.linkedlist;
+package com.example.linkedlist1;
 
 import java.util.Arrays;
 
 /**
- * Problem: Reverse a Linked List
+ * Problem: Find the Middle of a Linked List
  *
- * Given the head of a singly linked list, reverse the list and return
- * the head of the modified list.
+ * Given the head of a singly linked list, return the middle node of the
+ * linked list. If the list has an even number of nodes, return the
+ * second middle node.
  *
  * Example 1:
- *   Input:  head -> 1 -> 2 -> 3 -> 4 -> 5
- *   Output: head -> 5 -> 4 -> 3 -> 2 -> 1
- *   Explanation: All the links are reversed and the head now points to
- *   the last node of the original list.
+ *   Input:  head -> 3 -> 8 -> 7 -> 1 -> 3
+ *   Output (value at returned node): 7
+ *   Explanation: There are 5 nodes, so the middle node is the 3rd node
+ *   with value 7.
  *
  * Example 2:
- *   Input:  head -> 6 -> 8
- *   Output: head -> 8 -> 6
- *   Explanation: All the links are reversed and the head now points to
- *   the last node of the original list. This can be seen like:
- *   6 <- 8 <- head.
+ *   Input:  head -> 2 -> 9 -> 1 -> 4 -> 0 -> 4
+ *   Output (value at returned node): 4
+ *   Explanation: There are 6 nodes, so both the 3rd and 4th nodes are
+ *   middle. The 2nd middle (4th node) is returned, with value 4.
  *
  * Constraints:
- *   0 <= number of nodes <= 5000
+ *   1 <= number of nodes <= 5000
  *   -5000 <= node.val <= 5000
  */
-public class ReverseLinkedList {
+public class MiddleOfLinkedList {
 
     /**
-     * Reverses a singly linked list in place and returns the new head.
+     * Returns the middle node of a singly linked list. For an even-length
+     * list, the second of the two middle nodes is returned.
      *
-     * Algorithm (iterative, three pointers):
-     *   - Walk through the list, at each step pointing the current
-     *     node's next back to the previous node.
-     *   - prev tracks the node already reversed; temp walks forward.
-     *   - When temp falls off the end, prev is the new head.
+     * Algorithm (slow and fast pointers):
+     *   - slow advances one node per step, fast advances two.
+     *   - When fast reaches the tail, slow is at the middle.
+     *   - Because fast starts at the same node as slow, on an even-length
+     *     list slow lands on the second middle.
      *
      * Time complexity:  O(n)
      * Space complexity: O(1)
      */
-    public ListNode reverseList(ListNode head) {
+    public ListNode middleOfLinkedList(ListNode head) {
 
-        // prev = node already reversed; temp = node being processed.
-        ListNode prev = null;
-        ListNode temp = head;
+        // slow lags by one, fast races ahead by two.
+        ListNode slow = head;
+        ListNode fast = head;
 
-        while (temp != null) {
-            // Save next before we overwrite temp.next.
-            ListNode nextNode = temp.next;
-            // Flip the link to point backwards.
-            temp.next = prev;
-            // Move both pointers one step forward.
-            prev = temp;
-            temp = nextNode;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
 
-        // prev is the new head once temp falls off the tail.
-        return prev;
+        // fast has reached (or jumped past) the tail, so slow is the middle.
+        return slow;
 
     }
 
     public static void main(String[] args) {
-        ReverseLinkedList solution = new ReverseLinkedList();
+        MiddleOfLinkedList solution = new MiddleOfLinkedList();
 
         int passedTests = 0;
         int totalTests = 0;
@@ -69,57 +65,57 @@ public class ReverseLinkedList {
         totalTests++;
         passedTests += runTest(
                 solution,
-                "Basic example from problem statement - 5 node list",
-                new int[]{1, 2, 3, 4, 5},
-                new int[]{5, 4, 3, 2, 1}
+                "Basic example - 5 node list, middle value 7",
+                new int[]{3, 8, 7, 1, 3},
+                7
         );
 
         totalTests++;
         passedTests += runTest(
                 solution,
-                "Two-node example from problem statement",
-                new int[]{6, 8},
-                new int[]{8, 6}
+                "Even-length list - return second middle, value 4",
+                new int[]{2, 9, 1, 4, 0, 4},
+                4
         );
 
         totalTests++;
         passedTests += runTest(
                 solution,
-                "Single node - list stays the same",
-                new int[]{1},
-                new int[]{1}
+                "Now your turn - 5 node list, middle value 1",
+                new int[]{3, 8, 1, 7, 0},
+                1
         );
 
         totalTests++;
         passedTests += runTest(
                 solution,
-                "Empty list - head stays null",
-                new int[]{},
-                new int[]{}
+                "Single node - that node is the middle",
+                new int[]{5},
+                5
         );
 
         totalTests++;
         passedTests += runTest(
                 solution,
-                "Two nodes in ascending order",
+                "Two nodes - second node is the second middle",
                 new int[]{1, 2},
-                new int[]{2, 1}
+                2
         );
 
         totalTests++;
         passedTests += runTest(
                 solution,
-                "All nodes have the same value",
-                new int[]{7, 7, 7},
-                new int[]{7, 7, 7}
+                "All nodes have the same value - middle is still that value",
+                new int[]{7, 7, 7, 7},
+                7
         );
 
         totalTests++;
         passedTests += runTest(
                 solution,
-                "Longer odd-length ascending list",
-                new int[]{1, 3, 5, 7, 9},
-                new int[]{9, 7, 5, 3, 1}
+                "Even-length ascending list - second middle is 30",
+                new int[]{10, 20, 30, 40},
+                30
         );
 
         System.out.println();
@@ -137,33 +133,33 @@ public class ReverseLinkedList {
     }
 
     private static int runTest(
-            ReverseLinkedList solution,
+            MiddleOfLinkedList solution,
             String testName,
             int[] input,
-            int[] expected
+            int expected
     ) {
         try {
             ListNode inputList = buildList(input);
-            ListNode expectedList = buildList(expected);
+            ListNode actual = solution.middleOfLinkedList(inputList);
 
-            ListNode actualList = solution.reverseList(inputList);
-
-            String actualStr = listToString(actualList);
-            String expectedStr = listToString(expectedList);
-
-            if (actualStr.equals(expectedStr)) {
+            if (actual != null && actual.val == expected) {
                 System.out.println(
                         "[PASS] " + testName
-                                + " | input=" + listToString(buildList(input))
-                                + ", result=" + actualStr
+                                + " | input=" + listToString(inputList)
+                                + ", middle=" + actual.val
                 );
                 return 1;
             }
 
             System.out.println("[FAIL] " + testName);
             System.out.println("Input:    " + Arrays.toString(input));
-            System.out.println("Expected: " + expectedStr);
-            System.out.println("Actual:   " + actualStr);
+            System.out.println(
+                    "Expected middle: " + expected
+            );
+            System.out.println(
+                    "Actual middle:   "
+                            + (actual == null ? "null" : actual.val)
+            );
             System.out.println();
             return 0;
         } catch (Exception exception) {
