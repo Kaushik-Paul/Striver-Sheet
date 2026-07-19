@@ -32,6 +32,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | # | Problem                       | Solution                                                                         | Complexity                          |
 |---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
 | 1 | N Meetings in One Room        | [NMeetingsInOneRoom.java](src/com/example/greedyalgorithm/NMeetingsInOneRoom.java) | O(N log N) time, O(N) space        |
+| 2 | Minimum Platforms in Railway  | [MinimumPlatformInRailway.java](src/com/example/greedyalgorithm/MinimumPlatformInRailway.java) | O(N^2) time, O(1) space            |
 
 ## Project Structure
 
@@ -53,7 +54,8 @@ src/
     │   ├── RemoveNthListFromBack.java
     │   └── DeleteNodeInLinkedList.java
     └── greedyalgorithm/
-        └── NMeetingsInOneRoom.java
+        ├── NMeetingsInOneRoom.java
+        └── MinimumPlatformInRailway.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
