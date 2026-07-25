@@ -36,6 +36,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 2 | Minimum Platforms in Railway  | [MinimumPlatformInRailway.java](src/com/example/greedyalgorithm/MinimumPlatformInRailway.java) | O(N^2) time, O(1) space            |
 | 3 | Job Sequencing Problem        | [JobSequencingProblem.java](src/com/example/greedyalgorithm/JobSequencingProblem.java) | O(N log N + N·D) time, O(D) space  |
 | 4 | Fractional Knapsack            | [FractionalKnapsack.java](src/com/example/greedyalgorithm/FractionalKnapsack.java) | O(N log N) time, O(N) space        |
+| 5 | Assign Cookies                 | [AssignCookie.java](src/com/example/greedyalgorithm/AssignCookie.java) | O(N log N + M log M) time, O(1) space |
 
 ## Project Structure
 
@@ -61,7 +62,8 @@ src/
         ├── NMeetingsInOneRoom.java
         ├── MinimumPlatformInRailway.java
         ├── JobSequencingProblem.java
-        └── FractionalKnapsack.java
+        ├── FractionalKnapsack.java
+        └── AssignCookie.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
