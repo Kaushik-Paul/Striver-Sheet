@@ -26,6 +26,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 3 | Merge Two Sorted Linked Lists        | [MergeLinkedList.java](src/com/example/linkedlist1/MergeLinkedList.java)                   | O(n + m) time, O(1) space   |
 | 4 | Remove Nth Node From End of List     | [RemoveNthListFromBack.java](src/com/example/linkedlist1/RemoveNthListFromBack.java)       | O(n) time, O(1) space       |
 | 5 | Delete Node in a Linked List         | [DeleteNodeInLinkedList.java](src/com/example/linkedlist1/DeleteNodeInLinkedList.java)     | O(1) time, O(1) space       |
+| 6 | Add Two Numbers in Linked List       | [AddTwoNumbersInLinkedList.java](src/com/example/linkedlist1/AddTwoNumbersInLinkedList.java) | O(max(N, M)) time, O(max(N, M)) space |
 
 ### Greedy Algorithm
 
@@ -54,7 +55,8 @@ src/
     │   ├── MiddleOfLinkedList.java
     │   ├── MergeLinkedList.java
     │   ├── RemoveNthListFromBack.java
-    │   └── DeleteNodeInLinkedList.java
+    │   ├── DeleteNodeInLinkedList.java
+    │   └── AddTwoNumbersInLinkedList.java
     └── greedyalgorithm/
         ├── NMeetingsInOneRoom.java
         ├── MinimumPlatformInRailway.java
