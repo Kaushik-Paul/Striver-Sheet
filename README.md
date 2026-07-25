@@ -38,6 +38,12 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 4 | Fractional Knapsack            | [FractionalKnapsack.java](src/com/example/greedyalgorithm/FractionalKnapsack.java) | O(N log N) time, O(N) space        |
 | 5 | Assign Cookies                 | [AssignCookie.java](src/com/example/greedyalgorithm/AssignCookie.java) | O(N log N + M log M) time, O(1) space |
 
+### Binary Search
+
+| # | Problem                       | Solution                                                                         | Complexity                          |
+|---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
+| 1 | Find Nth Root of a Number      | [NthRootOfInteger.java](src/com/example/binarysearch/NthRootOfInteger.java)     | O(M log N) time, O(1) space          |
+
 ## Project Structure
 
 ```
@@ -58,12 +64,14 @@ src/
     │   ├── RemoveNthListFromBack.java
     │   ├── DeleteNodeInLinkedList.java
     │   └── AddTwoNumbersInLinkedList.java
-    └── greedyalgorithm/
-        ├── NMeetingsInOneRoom.java
-        ├── MinimumPlatformInRailway.java
-        ├── JobSequencingProblem.java
-        ├── FractionalKnapsack.java
-        └── AssignCookie.java
+    ├── greedyalgorithm/
+    │   ├── NMeetingsInOneRoom.java
+    │   ├── MinimumPlatformInRailway.java
+    │   ├── JobSequencingProblem.java
+    │   ├── FractionalKnapsack.java
+    │   └── AssignCookie.java
+    └── binarysearch/
+        └── NthRootOfInteger.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
