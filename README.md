@@ -46,6 +46,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 2 | Single Element in Sorted Array | [SingleElementInSortedArray.java](src/com/example/binarysearch/SingleElementInSortedArray.java) | O(n) time, O(1) space              |
 | 3 | Single Element in Sorted Array (Binary Search) | [SingleElementInSortedArrayBinary.java](src/com/example/binarysearch/SingleElementInSortedArrayBinary.java) | O(log n) time, O(1) space |
 | 4 | Search in Rotated Sorted Array | [SearchInRotatedSortedArray.java](src/com/example/binarysearch/SearchInRotatedSortedArray.java) | O(log n) time, O(1) space |
+| 5 | Median of Two Sorted Arrays | [MedianOfTwoSortedArrays.java](src/com/example/binarysearch/MedianOfTwoSortedArrays.java) | O(m + n) time, O(1) space |
 
 ## Project Structure
 
@@ -77,7 +78,8 @@ src/
         ├── NthRootOfInteger.java
         ├── SingleElementInSortedArray.java
         ├── SingleElementInSortedArrayBinary.java
-        └── SearchInRotatedSortedArray.java
+        ├── SearchInRotatedSortedArray.java
+        └── MedianOfTwoSortedArrays.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
