@@ -50,7 +50,7 @@ public class MedianOfTwoSortedArraysBinarySearch {
         while (low <= high) {
 
             // mid1 = elements taken from arr1 into the left half.
-            int mid1 = (low + high) >>> 1;
+            int mid1 = low + (high - low) / 2;
 
             // mid2 = elements taken from arr2 into the left half.
             int mid2 = left - mid1;
