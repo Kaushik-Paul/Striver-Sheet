@@ -16,35 +16,41 @@ import java.util.Arrays;
  * Constraints:
  *   1 <= n <= 100
  */
-public class RotateArraysBy90 {
+public class RotateArraysBy90InPlace {
 
     /**
-     * Builds the rotated matrix in an auxiliary array, then copies it back.
+     * Transposes the matrix in place, then reverses each row to produce
+     * the 90-degree clockwise rotation without using extra space.
      *
      * Time complexity:  O(n^2)
-     * Space complexity: O(n^2)
+     * Space complexity: O(1)
      */
     public void rotateMatrix(int[][] matrix) {
+        // Basic way to do this is transpose the matrix
+        // And then reverse the columns
         int n = matrix.length;
-        int[][] rotatedMatrix = new int[n][n];
 
-        // Place each element at its 90-degree clockwise position.
-        for(int i = 0; i < n;i++) {
-            for (int j = 0; j < n; j++) {
-                rotatedMatrix[j][n - i - 1] = matrix[i][j];
+        // Transpose the matrix
+        for(int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
             }
         }
 
-        // Copy the rotated values back into the original matrix.
-        for(int i = 0; i < n;i++) {
-            for (int j = 0; j < n; j++) {
-                matrix[i][j] = rotatedMatrix[i][j];
+        // Reverse the columns
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n / 2; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[i][n - j - 1];
+                matrix[i][n - j - 1] = temp;
             }
         }
     }
 
     public static void main(String[] args) {
-        RotateArraysBy90 solution = new RotateArraysBy90();
+        RotateArraysBy90InPlace solution = new RotateArraysBy90InPlace();
 
         int passedTests = 0;
         int totalTests = 0;
@@ -160,7 +166,7 @@ public class RotateArraysBy90 {
     }
 
     private static int runTest(
-            RotateArraysBy90 solution,
+            RotateArraysBy90InPlace solution,
             String testName,
             int[][] input,
             int[][] expected
