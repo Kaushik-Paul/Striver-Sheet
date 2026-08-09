@@ -17,6 +17,12 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 5 | Sort an array of 0's, 1's, 2's | [SortArrays0s1s2s.java](src/com/example/arrays1/SortArrays0s1s2s.java)           | O(n) time, O(1) space               |
 | 6 | Best Time to Buy and Sell Stock | [BuyAndSellStock.java](src/com/example/arrays1/BuyAndSellStock.java)             | O(n) time, O(1) space               |
 
+### Arrays-2
+
+| # | Problem                       | Solution                                                                         | Complexity                          |
+|---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
+| 1 | Rotate matrix by 90 degrees   | [RotateArraysBy90.java](src/com/example/arrays2/RotateArraysBy90.java)          | O(n^2) time, O(1) space             |
+
 ### LinkedList
 
 | # | Problem                              | Solution                                                                                 | Complexity                  |
@@ -63,6 +69,8 @@ src/
     │   ├── KadensAlgorithm.java
     │   ├── SortArrays0s1s2s.java
     │   └── BuyAndSellStock.java
+    ├── arrays2/
+    │   └── RotateArraysBy90.java
     ├── linkedlist1/
     │   ├── ListNode.java
     │   ├── ReverseLinkedList.java
