@@ -137,8 +137,12 @@ public class <ProblemName> {
 - Use 4 spaces for indentation.
 - Opening brace on the same line.
 - Keep lines within 100 characters when reasonable.
-- Do not change existing logic unless explicitly asked.
-- Only add comments where they clarify non-obvious behavior. Do not over-comment.
+
+### 3.3 User Solution Integrity
+
+The solution the user wrote must **not** be changed: do not rewrite, refactor, restyle, or alter the algorithm, control flow, data structures, or variable names unless the user explicitly asks.
+
+You **may** add comments inside the user's solution, but only at important places, and only when a comment is required and genuinely helpful (for example, a non-obvious invariant, a tricky merge/overlap condition, or why a greedy choice is valid). Do not add comments that restate the code. Do not over-comment.
 
 ---
 
@@ -166,9 +170,9 @@ This workflow applies whenever the user indicates they have written, pasted, or 
    - If the topic section does not exist, create a new `### <Topic>` heading.
    - Update the project structure tree to include the new package/file.
 
-3. **Do NOT modify the user's algorithm unless asked**
-   - The user may have a specific solution in mind.
-   - Only add comments where helpful.
+3. **Do NOT modify the user's solution unless asked**
+   - Leave the user's algorithm, logic, and style unchanged (see §3.3).
+   - You may add comments only at important places, and only if they are required and helpful.
    - Do not refactor code style without permission.
 
 ### Example Workflow
@@ -201,8 +205,8 @@ Always compile and run the file after making changes.
 
 ## 6. Things to Avoid
 
-- Do not change the user's core algorithm without explicit permission.
-- Do not add unnecessary comments or documentation.
+- Do not change the user's solution without explicit permission (see §3.3).
+- Do not add comments unless they are at an important place and are required and helpful. Do not add unnecessary documentation.
 - Do not commit or push unless explicitly asked.
 - Do not delete or move existing files without permission.
 - Do not add emojis to code or documentation.
