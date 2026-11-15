@@ -65,6 +65,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | # | Problem                       | Solution                                                                         | Complexity                          |
 |---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
 | 1 | Longest Substring Without Repeating Characters | [LongestNonRepeatingSubstring.java](src/com/example/slidingwindow/LongestNonRepeatingSubstring.java) | O(n) time, O(1) space |
+| 2 | Max Consecutive Ones III | [MaxConsequencesOnesIII.java](src/com/example/slidingwindow/MaxConsequencesOnesIII.java) | O(n) time, O(1) space |
 
 ## Project Structure
 
@@ -107,7 +108,8 @@ src/
     │   ├── MedianOfTwoSortedArrays.java
     │   └── MedianOfTwoSortedArraysBinarySearch.java
     └── slidingwindow/
-        └── LongestNonRepeatingSubstring.java
+        ├── LongestNonRepeatingSubstring.java
+        └── MaxConsequencesOnesIII.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
