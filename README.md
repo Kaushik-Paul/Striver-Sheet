@@ -60,6 +60,12 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 5 | Median of Two Sorted Arrays | [MedianOfTwoSortedArrays.java](src/com/example/binarysearch/MedianOfTwoSortedArrays.java) | O(m + n) time, O(1) space |
 | 6 | Median of Two Sorted Arrays (Binary Search) | [MedianOfTwoSortedArraysBinarySearch.java](src/com/example/binarysearch/MedianOfTwoSortedArraysBinarySearch.java) | O(log(min(m, n))) time, O(1) space |
 
+### Sliding Window
+
+| # | Problem                       | Solution                                                                         | Complexity                          |
+|---|-------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
+| 1 | Longest Substring Without Repeating Characters | [LongestNonRepeatingSubstring.java](src/com/example/slidingwindow/LongestNonRepeatingSubstring.java) | O(n) time, O(1) space |
+
 ## Project Structure
 
 ```
@@ -93,13 +99,15 @@ src/
     │   ├── AssignCookie.java
     │   ├── MiniMumCoins.java
     │   └── MinimumCoinsTabulation.java
-    └── binarysearch/
-        ├── NthRootOfInteger.java
-        ├── SingleElementInSortedArray.java
-        ├── SingleElementInSortedArrayBinary.java
-        ├── SearchInRotatedSortedArray.java
-        ├── MedianOfTwoSortedArrays.java
-        └── MedianOfTwoSortedArraysBinarySearch.java
+    ├── binarysearch/
+    │   ├── NthRootOfInteger.java
+    │   ├── SingleElementInSortedArray.java
+    │   ├── SingleElementInSortedArrayBinary.java
+    │   ├── SearchInRotatedSortedArray.java
+    │   ├── MedianOfTwoSortedArrays.java
+    │   └── MedianOfTwoSortedArraysBinarySearch.java
+    └── slidingwindow/
+        └── LongestNonRepeatingSubstring.java
 ```
 
 Each problem lives in `src/com/example/<topic>/<ProblemName>.java`, where `<topic>` matches the sheet's section (e.g. `arrays1`, `linkedlist1`, `recursion`, `graph`, ...). New topics are added as new packages under `com.example`.
