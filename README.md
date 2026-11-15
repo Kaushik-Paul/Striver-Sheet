@@ -24,6 +24,7 @@ Solutions are written in Java, each self-contained with its own test harness.
 | 1 | Rotate matrix by 90 degrees   | [RotateArraysBy90.java](src/com/example/arrays2/RotateArraysBy90.java)          | O(n^2) time, O(n^2) space           |
 | 2 | Rotate matrix by 90 degrees (In Place) | [RotateArraysBy90InPlace.java](src/com/example/arrays2/RotateArraysBy90InPlace.java) | O(n^2) time, O(1) space    |
 | 3 | Merge Overlapping Subintervals | [MergeOverlappingSubintervals.java](src/com/example/arrays2/MergeOverlappingSubintervals.java) | O(n log n) time, O(n) space |
+| 4 | 3 Sum | [ThreeSum.java](src/com/example/arrays2/ThreeSum.java) | O(n^2) time, O(log n) auxiliary space + O(k) output for k triplets |
 
 ### LinkedList
 
@@ -74,7 +75,8 @@ src/
     ├── arrays2/
     │   ├── RotateArraysBy90.java
     │   ├── RotateArraysBy90InPlace.java
-    │   └── MergeOverlappingSubintervals.java
+    │   ├── MergeOverlappingSubintervals.java
+    │   └── ThreeSum.java
     ├── linkedlist1/
     │   ├── ListNode.java
     │   ├── ReverseLinkedList.java
